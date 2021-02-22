@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CadastrarEvento">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/fragment_cadastrar_evento_linear_layout_botton">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_margin="@dimen/margin_fragments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lista_sala_title_nome_sala"
+                    android:text="@string/listar_sala_fragment_title_input_nome_evento"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/general_titles_normal"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <EditText
+                    android:id="@+id/fragment_cadastrar_evento_edt_nome_evento"
+                    android:layout_width="@dimen/input_edit_text_in_fragments_1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/general_titles_normal"
+                    android:layout_marginTop="@dimen/margin_fragments_between_views"
+                    android:layout_marginBottom="@dimen/margin_fragments_between_views">
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listar_sala_fragment_title_input_selecione_as_salas"
+                    android:textSize="@dimen/general_titles_normal"
+                    android:layout_marginBottom="@dimen/margin_fragments_between_views">
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_cadastrar_evento_recycle_view_lista_salas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/list_listar_salas_criar_evento"
+                    android:background="@drawable/border_half_black"
+                    android:nestedScrollingEnabled="false">
+                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/general_titles_normal"
+                    android:layout_marginTop="@dimen/margin_fragments_between_views"
+                    android:text="@string/listar_sala_fragment_title_select_espaco_cafe">
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_cadastrar_evento_recycle_view_lista_cafe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/list_espaco_cafe"
+                    android:background="@drawable/border_half_black">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragment_cadastrar_evento_linear_layout_botton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_fragments">
+        <Button
+            android:id="@+id/fragment_cadastrar_evento_btn_salvar_evento"
+            android:text="@string/button_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

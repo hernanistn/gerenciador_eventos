@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_fragments">10dp</dimen>
+    <dimen name="input_edit_text_in_fragments_1">350dp</dimen>
+    <dimen name="input_edit_text_in_fragments_2">50dp</dimen>
+    <dimen name="margin_fragments_between_views">5dp</dimen>
+    <dimen name="general_titles_large">20dp</dimen>
+    <dimen name="general_titles_normal">17dp</dimen>
+</resources>

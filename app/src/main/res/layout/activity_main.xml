@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.GerenciadorDeEventos.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.GerenciadorDeEventos.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/activity_main_host_fragment"
+        android:layout_below="@id/appbar"
+        android:layout_above="@id/activity_main_linear_layout_btnNV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_main_linear_layout_btnNV"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:fab_addButtonColorNormal="@color/purple_500"
+        android:src="@android:drawable/ic_input_add"
+        app:fab_labelStyle="@style/menu_labels_style">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_adicionarEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="@string/menu_activity_main_fab_add_evento"
+            app:fab_icon="@android:drawable/ic_menu_day">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_criarSala"
+            app:fab_icon="@android:drawable/ic_menu_add"
+            app:fab_title="@string/menu_activity_main_fab_add_sala">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_criarCafe"
+            app:fab_icon="@android:drawable/btn_star_big_on"
+            app:fab_title="@string/menu_activity_main_fab_add_cafe"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_cadastrar_pessoas"
+            app:fab_icon="@android:drawable/ic_menu_save"
+            app:fab_title="@string/menu_activity_main_fab_add_pessoa">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+<LinearLayout
+    android:id="@+id/activity_main_linear_layout_btnNV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/activity_main_botton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_activity_main"
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
+
+
+</RelativeLayout>

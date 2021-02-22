@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_fragments">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_half_black"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/fragment_lista_sala_nome"
+                    android:text="NOME DA SALA"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/general_titles_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/fragment_lista_sala_titulo_capacidade"
+                        android:text="@string/adapter_listar_sala_title_capacidade"
+                        android:textSize="@dimen/general_titles_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/fragment_lista_sala_numero1_capacidade"
+                        android:layout_width="wrap_content"
+                        android:text="1"
+                        android:textSize="@dimen/general_titles_normal"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="/"
+                        android:textSize="@dimen/general_titles_normal"                       >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/fragment_lista_sala_numero2_capacidade"
+                        android:layout_width="wrap_content"
+                        android:text="30"
+                        android:textSize="@dimen/general_titles_normal"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

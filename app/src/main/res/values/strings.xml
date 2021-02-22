@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Gerenciador De Eventos</string>
+    <string name="action_add_pessoa">Adicionar Convidado</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="button_salvar">Salvar</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Strings used in fragment_cadastrar_sala -->
+    <string name="listar_sala_fragment_title_input_nome_sala">Nome da Sala</string>
+    <string name="listar_sala_fragment_title_input_lotacao_sala">Lotação Máxima</string>
+    <string name="listar_sala_fragment_title_select_espaco_cafe">Selecione o Espaço de Café</string>
+
+    <!-- Strings used in fragment_cadastrar_evento -->
+    <string name="listar_sala_fragment_title_input_nome_evento">Nome do Evento</string>
+    <string name="listar_sala_fragment_title_input_selecione_as_salas">Selecione as salas que pertecem ao evento</string>
+
+    <!-- Strings used in adapter_listar_sala -->
+    <string name="adapter_listar_sala_title_capacidade">Capacidade: </string>
+
+    <!-- Strings used in menu_activity_main-->
+    <string name="menu_activity_main_eventos">Eventos</string>
+    <string name="menu_activity_main_Pessoas">Pessoas</string>
+    <string name="menu_activity_main_fab_add_evento">Criar Evento</string>
+    <string name="menu_activity_main_fab_add_sala">Criar Sala</string>
+    <string name="menu_activity_main_fab_add_cafe">Criar Sala de Café</string>
+    <string name="menu_activity_main_fab_add_pessoa">Cadastrar Pessoa</string>
+
+    <!-- Strings used in fragment_cadastrar_sala_cafe -->
+    <string name="fragment_cadastrar_sala_cafe_title_input_nome_sala">Nome do Espaco do Café</string>
+    <string name="fragment_cadastrar_sala_cafe_title_input_lotacao_sala_cafe">Lotação Máxima</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
