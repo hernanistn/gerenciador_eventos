@@ -12,16 +12,24 @@ class EspacoCafeController(val context: Context) {
         Realm.init(context)
         val realm = Realm.getDefaultInstance()
         realm.beginTransaction()
-        var idAtual = realm.where(EspacoCafe::class.java).findAll()
+        var idAtual = realm.where(EspacoCafe::class.java).findAll().size
+        realm.commitTransaction()
+        realm.close()
         if(idAtual == null){
             espacoCafe.id = 1
         }else{
-            espacoCafe.id = idAtual.size.inc()
+            espacoCafe.id = idAtual.inc()
         }
-        realm.insert(espacoCafe)
-        realm.commitTransaction()
+        if(espacoCafe.nomeEspacoCafe.isNotBlank()){
+            realm.beginTransaction()
+            realm.insert(espacoCafe)
+            realm.commitTransaction()
+            realm.close()
+        }else{
+            Toast.makeText(context, "Nome em branco!", Toast.LENGTH_LONG).show()
+        }
         realm.close()
-        Toast.makeText(context, espacoCafe.id.toString()+" RESPOSTA DO DB", Toast.LENGTH_LONG).show()
+
 
     }
     fun getAll(): RealmResults<EspacoCafe> {

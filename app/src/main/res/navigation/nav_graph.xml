@@ -8,7 +8,6 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.tocopizzaria.gerenciadordeeventos.fragments.ListarSala"
-        android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_lista_sala">
 
         <action
@@ -17,9 +16,8 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.tocopizzaria.gerenciadordeeventos.fragments.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:name="com.tocopizzaria.gerenciadordeeventos.fragments.ListarPessoas"
+        tools:layout="@layout/fragment_listar_pessoas">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"

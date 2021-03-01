@@ -1,14 +1,9 @@
 <resources>
     <string name="app_name">Gerenciador De Eventos</string>
     <string name="action_add_pessoa">Adicionar Convidado</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+
+
     <string name="button_salvar">Salvar</string>
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <!-- Strings used in fragment_cadastrar_sala -->
     <string name="listar_sala_fragment_title_input_nome_sala">Nome da Sala</string>
@@ -22,6 +17,9 @@
     <!-- Strings used in adapter_listar_sala -->
     <string name="adapter_listar_sala_title_capacidade">Capacidade: </string>
 
+    <!-- Strings used in list_listar_pessoas -->
+    <string name="list_listar_pessoa_title_evento_participante">Eventos Participante: </string>
+
     <!-- Strings used in menu_activity_main-->
     <string name="menu_activity_main_eventos">Eventos</string>
     <string name="menu_activity_main_Pessoas">Pessoas</string>
@@ -33,6 +31,11 @@
     <!-- Strings used in fragment_cadastrar_sala_cafe -->
     <string name="fragment_cadastrar_sala_cafe_title_input_nome_sala">Nome do Espaco do Café</string>
     <string name="fragment_cadastrar_sala_cafe_title_input_lotacao_sala_cafe">Lotação Máxima</string>
+
+    <!-- Strings used in fragment_cadastrar_pessoa -->
+    <string name="fragment_cadastrar_pessoa_title_input_nome_pessoa">Nome</string>
+    <string name="fragment_cadastrar_pessoa_title_input_sobrenome_pessoa">Sobrenome</string>
+    <string name="fragment_cadastrar_pessoa_title_button_save_pessoa">Cadastrar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

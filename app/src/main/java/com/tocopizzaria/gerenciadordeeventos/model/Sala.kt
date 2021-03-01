@@ -12,6 +12,5 @@ open class Sala() : RealmObject() {
     var id: Int = 0
     var nome: String = ""
     var lotacaoMaxima: Float = 0F
-    var pessoas: RealmList<Pessoa> = RealmList() //relação one-to-many
 
 }

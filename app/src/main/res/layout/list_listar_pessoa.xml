@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_fragments"
+        android:layout_toLeftOf="@+id/list_listar_pessoa_btn_edt">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/list_listar_pessoa_nome"
+                            android:text="NOME"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/general_titles_large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <Space
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content">
+                        </Space>
+                        <TextView
+                            android:id="@+id/list_listar_pessoa_sobre_nome"
+                            android:text="sobrenome"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/general_titles_large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/list_listar_pessoa_title_evento_participante"
+                            android:textSize="@dimen/general_titles_normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/list_listar_pessoa_eventos_que_participa"
+                            android:layout_width="wrap_content"
+                            android:text=""
+                            android:textSize="@dimen/general_titles_normal"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/list_listar_pessoa_btn_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentRight="true">
+    </ImageButton>
+
+
+</RelativeLayout>

@@ -8,7 +8,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.tocopizzaria.gerenciadordeeventos.R
 import com.tocopizzaria.gerenciadordeeventos.model.EspacoCafe
-import com.tocopizzaria.gerenciadordeeventos.model.Sala
 import io.realm.RealmResults
 
 class ListarEspacoCafeAdapter(val listaEspacoCafe: MutableLiveData<RealmResults<EspacoCafe>>): RecyclerView.Adapter<ListarEspacoCafeAdapter.ViewHolder>() {
@@ -18,7 +17,7 @@ class ListarEspacoCafeAdapter(val listaEspacoCafe: MutableLiveData<RealmResults<
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         var lista = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_espaco_cafe, parent, false)
+            .inflate(R.layout.list_espaco_cafe_criar_evento, parent, false)
         return ViewHolder(lista)
     }
 

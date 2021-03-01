@@ -62,7 +62,7 @@
                     android:id="@+id/fragment_cadastrar_evento_recycle_view_lista_cafe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/list_espaco_cafe"
+                    tools:listitem="@layout/list_espaco_cafe_criar_evento"
                     android:background="@drawable/border_half_black">
                 </androidx.recyclerview.widget.RecyclerView>
             </LinearLayout>

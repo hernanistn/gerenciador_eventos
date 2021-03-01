@@ -15,12 +15,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tocopizzaria.gerenciadordeeventos.R
 import com.tocopizzaria.gerenciadordeeventos.adapter.ListarEspacoCafeAdapter
-import com.tocopizzaria.gerenciadordeeventos.adapter.ListarSalaAdapter
 import com.tocopizzaria.gerenciadordeeventos.adapter.ListarSalaCriarEventoAdapter
 import com.tocopizzaria.gerenciadordeeventos.model.Evento
-import com.tocopizzaria.gerenciadordeeventos.modelView.EspacoCafeVM
-import com.tocopizzaria.gerenciadordeeventos.modelView.EventoVM
-import com.tocopizzaria.gerenciadordeeventos.modelView.SalaMV
+import com.tocopizzaria.gerenciadordeeventos.viewModel.EspacoCafeVM
+import com.tocopizzaria.gerenciadordeeventos.viewModel.EventoVM
+import com.tocopizzaria.gerenciadordeeventos.viewModel.SalaMV
 
 class CadastrarEvento : Fragment() {
     private lateinit var edt_nome_evento : EditText

@@ -1,4 +1,4 @@
-package com.tocopizzaria.gerenciadordeeventos.modelView
+package com.tocopizzaria.gerenciadordeeventos.viewModel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import com.tocopizzaria.gerenciadordeeventos.controller.SalaController
 import com.tocopizzaria.gerenciadordeeventos.model.Sala
 import io.realm.RealmResults
-import java.lang.Exception
 
 class SalaMV(val context: Context) : ViewModel() {
     private var salasLiveData : MutableLiveData<RealmResults<Sala>>

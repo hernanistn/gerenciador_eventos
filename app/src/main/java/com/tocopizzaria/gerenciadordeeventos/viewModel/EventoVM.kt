@@ -1,4 +1,4 @@
-package com.tocopizzaria.gerenciadordeeventos.modelView
+package com.tocopizzaria.gerenciadordeeventos.viewModel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData

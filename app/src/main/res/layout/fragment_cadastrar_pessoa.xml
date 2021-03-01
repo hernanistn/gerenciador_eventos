@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1"
-    tools:context=".fragments.ListarSala">
+    tools:context=".fragments.CadastrarPessoa">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
             android:layout_margin="@dimen/margin_fragments"
@@ -18,35 +16,30 @@
             android:orientation="vertical">
             <TextView
                 android:id="@+id/lista_sala_title_nome_sala"
-                android:text="@string/listar_sala_fragment_title_input_nome_sala"
+                android:text="@string/fragment_cadastrar_pessoa_title_input_nome_pessoa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             </TextView>
             <EditText
-                android:id="@+id/fragment_cadastraR_sala_edt_nome_sala"
+                android:id="@+id/fragment_cadastraR_pessoa_edt_nome_pessoa"
                 android:layout_width="@dimen/input_edit_text_in_fragments_1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_fragments_between_views"
                 android:layout_marginBottom="@dimen/margin_fragments_between_views">
             </EditText>
             <TextView
-                android:text="@string/listar_sala_fragment_title_input_lotacao_sala"
+                android:text="@string/fragment_cadastrar_pessoa_title_input_sobrenome_pessoa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             </TextView>
             <EditText
-                android:id="@+id/fragment_cadastraR_sala_edt_lotacao_maxima"
-                android:layout_width="wrap_content"
-                android:minWidth="@dimen/input_edit_text_in_fragments_2"
+                android:id="@+id/fragment_cadastraR_pessoa_edt_sobrenome_pessoa"
+                android:layout_width="@dimen/input_edit_text_in_fragments_1"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:layout_marginTop="@dimen/margin_fragments_between_views"
-                android:layout_marginBottom="@dimen/margin_fragments_between_views"
-                android:text="0"
-                android:selectAllOnFocus="true">
+                android:layout_marginBottom="@dimen/margin_fragments_between_views">
             </EditText>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,11 +47,12 @@
             android:layout_marginBottom="@dimen/margin_fragments"
             android:orientation="vertical">
             <Button
-                android:id="@+id/fragment_cadastraR_sala_btn_salvar"
-                android:text="@string/button_salvar"
+                android:id="@+id/fragment_cadastrar_pessoa_btn_cadastrar"
+                android:text="@string/fragment_cadastrar_pessoa_title_button_save_pessoa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
             </Button>
         </LinearLayout>
     </LinearLayout>
-</RelativeLayout>
+
+</FrameLayout>

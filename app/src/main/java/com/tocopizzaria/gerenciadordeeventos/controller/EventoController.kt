@@ -2,15 +2,10 @@ package com.tocopizzaria.gerenciadordeeventos.controller
 
 import android.content.Context
 import android.widget.Toast
-import com.tocopizzaria.gerenciadordeeventos.configuration.RealmConfig
+import com.tocopizzaria.gerenciadordeeventos.DBconfiguration.RealmConfig
 import com.tocopizzaria.gerenciadordeeventos.model.Evento
-import com.tocopizzaria.gerenciadordeeventos.model.Sala
 import io.realm.Realm
-import io.realm.RealmConfiguration
 import io.realm.RealmResults
-import io.realm.kotlin.delete
-import io.realm.kotlin.deleteFromRealm
-import io.realm.kotlin.isLoaded
 
 class EventoController (val context: Context) {
 
@@ -18,16 +13,23 @@ class EventoController (val context: Context) {
         Realm.init(context)
         val realm = Realm.getDefaultInstance()
         realm.beginTransaction()
-        var idAtual = realm.where(Evento::class.java).findAll()
+        var idAtual = realm.where(Evento::class.java).findAll().size
+        realm.commitTransaction()
+        realm.close()
         if(idAtual == null){
             evento.id = 1
         }else{
-            evento.id = idAtual.size.inc()
+            evento.id = idAtual.inc()
         }
-        realm.insert(evento)
-        realm.commitTransaction()
+        if(evento.nomeEvento.isNotBlank()){
+            realm.beginTransaction()
+            realm.insert(evento)
+            realm.commitTransaction()
+        }else{
+            Toast.makeText(context, "Nome do Evento em Branco", Toast.LENGTH_LONG).show()
+        }
         realm.close()
-        Toast.makeText(context, evento.id.toString()+" RESPOSTA DO DB", Toast.LENGTH_LONG).show()
+
 
     }
     fun getAll(): RealmResults<Evento> {
@@ -38,7 +40,6 @@ class EventoController (val context: Context) {
         return results
     }
     fun delete(evento: Evento){
-        //Realm.init(context)
         RealmConfig(context)
         val realm= Realm.getDefaultInstance()
         realm.beginTransaction()
@@ -46,5 +47,6 @@ class EventoController (val context: Context) {
         realm.commitTransaction()
         realm.close()
     }
+
 
 }

@@ -12,36 +12,30 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tocopizzaria.gerenciadordeeventos.R
-import com.tocopizzaria.gerenciadordeeventos.adapter.ListarEventoAdapter
-import com.tocopizzaria.gerenciadordeeventos.viewModel.EventoVM
+import com.tocopizzaria.gerenciadordeeventos.adapter.ListarPessoasAdapter
+import com.tocopizzaria.gerenciadordeeventos.viewModel.PessoaVM
 
-
-class ListarEventos : Fragment() {
-    private val eventoVM : EventoVM by viewModels<EventoVM>() {
+class ListarPessoas : Fragment() {
+    private val pessoaVM : PessoaVM by viewModels<PessoaVM>() {
         object: ViewModelProvider.Factory{
             override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-                return EventoVM(context!!) as T
+                return PessoaVM(context!!) as T
             }
         }
     }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
-        var view = inflater.inflate(R.layout.fragment_listar_eventos, container, false)
-        var recyclerView = view.findViewById<RecyclerView>(R.id.fragment_listar_eventos_recycle_view)
-
-        eventoVM.getAll().observe(viewLifecycleOwner, Observer {
-            var adapter = ListarEventoAdapter(eventoVM.getAll(), requireContext(), this)
+        var view = inflater.inflate(R.layout.fragment_listar_pessoas, container, false)
+        var recyclerView = view.findViewById<RecyclerView>(R.id.fragment_listar_pessoas_recycle_view)
+        pessoaVM.getAll().observe(viewLifecycleOwner, Observer {
+            var adapter = ListarPessoasAdapter(pessoaVM.getAll(), requireContext())
             recyclerView.layoutManager = LinearLayoutManager(context)
             recyclerView.adapter =adapter
             adapter.notifyDataSetChanged()
         })
         return view
     }
-
 }

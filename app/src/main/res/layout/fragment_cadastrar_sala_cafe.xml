@@ -38,7 +38,9 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:layout_marginTop="@dimen/margin_fragments_between_views"
-                android:layout_marginBottom="@dimen/margin_fragments_between_views">
+                android:layout_marginBottom="@dimen/margin_fragments_between_views"
+                android:text="0"
+                android:selectAllOnFocus="true">
             </EditText>
         </LinearLayout>
 

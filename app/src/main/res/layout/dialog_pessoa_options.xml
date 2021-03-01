@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple_500"
+        android:gravity="center">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_gravity="center"
+         android:textColor="@color/white"
+         android:textStyle="bold"
+         android:textSize="16dp"
+         android:text="ADICIONAR PESSOA A UM EVENTO">
+     </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_fragments">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_fragments_between_views"
+            android:text="Selecione um evento"
+            android:textSize="@dimen/general_titles_normal">
+        </TextView>
+        <Spinner
+            android:id="@+id/dialog_pessoa_options_spinner_eventos"
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_fragments_between_views"
+            android:layout_height="50dp"
+            android:background="@drawable/border_half_black">
+        </Spinner>
+        <TextView
+            android:id="@+id/dialog_pessoa_option_txt_eventoLotado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Este evento está lotado!"
+            android:textColor="@color/black">
+        </TextView>
+        <Button
+            android:id="@+id/dialog_pessoa_options_btn_adicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Adicionar">
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>

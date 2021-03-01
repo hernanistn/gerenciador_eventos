@@ -1,12 +1,10 @@
-package com.tocopizzaria.gerenciadordeeventos.modelView
+package com.tocopizzaria.gerenciadordeeventos.viewModel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.tocopizzaria.gerenciadordeeventos.controller.EspacoCafeController
-import com.tocopizzaria.gerenciadordeeventos.controller.EventoController
 import com.tocopizzaria.gerenciadordeeventos.model.EspacoCafe
-import com.tocopizzaria.gerenciadordeeventos.model.Evento
 import io.realm.RealmResults
 
 class EspacoCafeVM(val context: Context) : ViewModel() {

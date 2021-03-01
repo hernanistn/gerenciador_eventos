@@ -7,16 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.tocopizzaria.gerenciadordeeventos.R
 import com.tocopizzaria.gerenciadordeeventos.model.Sala
-import com.tocopizzaria.gerenciadordeeventos.modelView.SalaMV
-import java.lang.Exception
+import com.tocopizzaria.gerenciadordeeventos.viewModel.SalaMV
 
 class CadastratSala : Fragment() {
     private lateinit var edt_nome_sala : EditText

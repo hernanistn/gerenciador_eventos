@@ -12,9 +12,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.tocopizzaria.gerenciadordeeventos.R
 import com.tocopizzaria.gerenciadordeeventos.model.EspacoCafe
-import com.tocopizzaria.gerenciadordeeventos.model.Sala
-import com.tocopizzaria.gerenciadordeeventos.modelView.EspacoCafeVM
-import com.tocopizzaria.gerenciadordeeventos.modelView.SalaMV
+import com.tocopizzaria.gerenciadordeeventos.viewModel.EspacoCafeVM
 
 
 class CadastrarSalaCafe : Fragment() {
