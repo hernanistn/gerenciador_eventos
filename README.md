@@ -1,6 +1,6 @@
 Para executar o aplicativo é necessário um celular android. O aplicativo pode ser injetado no celular pela IDE Android Studio clicando no botão RUN 'APP', ou baixando a APK
 <a href="https://drive.google.com/file/d/1D2XD9P876rbu7NF5GWjulVbvD3W7xXYt/view?usp=sharing">clicando aqui.</a> <br>
-Obs: É necessário autorizar instalações de aplicativos de fontes desconhecidas nas configurações do dispositível móvel. Caso necessário, ativar o modo desenvolvedor no android.
+Obs: É necessário autorizar instalações de aplicativos de fontes desconhecidas nas configurações do dispositivo móvel. Caso necessário, ativar o modo desenvolvedor no android.
 
 
 O sistema permite cadastrar: salas, salas de café, cadastrar pessoas e cadastrar evento. Para cadastrar ambos, basta utilizar o botão flutuante da tela.
