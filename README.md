@@ -8,7 +8,7 @@ O sistema permite cadastrar: salas, salas de café, cadastrar pessoas e cadastra
 O sistema possui 2 telas principais onde pode-se navegar utilizando os botões na base da tela. As telas mostram a lista de eventos criados e a outra com pessoas cadastradas. 
 Para víncular uma pessoa a um evento, basta ir a tela onde lista as pessoas, clicar sobre o botão editar e logo parecerá uma tela de dialogo, onde seleciona-se o evento desejado.
 
-*O aplicativo utiliza persistência de dados utilizando MONGODB, com a biblioteca REALM.IO <br>
+*O aplicativo utiliza persistência de dados utilizando a biblioteca REALM.IO <br>
 *O aplicativo deixou de atender o requisito de gerenciar as trocas de turmas entre intervalos e gerenciar a entrada de pessoa nas salas quando colocadas a um evento (assim como
 nas salas de café também).
 
