@@ -1,5 +1,5 @@
 Para executar o aplicativo é necessário um celular android. O aplicativo pode ser injetado no celular pela IDE Android Studio clicando no botão RUN 'APP', ou baixando a APK
-<a href="https://drive.google.com/file/d/1D2XD9P876rbu7NF5GWjulVbvD3W7xXYt/view?usp=sharing">clicando aqui.</a>
+<a href="https://drive.google.com/file/d/1D2XD9P876rbu7NF5GWjulVbvD3W7xXYt/view?usp=sharing">clicando aqui.</a> <br>
 Obs: É necessário autorizar instalações de aplicativos de fontes desconhecidas nas configurações do dispositível móvel. Caso necessário, ativar o modo desenvolvedor no android.
 
 
@@ -8,7 +8,7 @@ O sistema permite cadastrar: salas, salas de café, cadastrar pessoas e cadastra
 O sistema possui 2 telas principais onde pode-se navegar utilizando os botões na base da tela. As telas mostram a lista de eventos criados e a outra com pessoas cadastradas. 
 Para víncular uma pessoa a um evento, basta ir a tela onde lista as pessoas, clicar sobre o botão editar e logo parecerá uma tela de dialogo, onde seleciona-se o evento desejado.
 
-*O aplicativo utiliza persistência de dados utilizando MONGODB, com a biblioteca REALM.IO
+*O aplicativo utiliza persistência de dados utilizando MONGODB, com a biblioteca REALM.IO <br>
 *O aplicativo deixou de atender o requisito de gerenciar as trocas de turmas entre intervalos e gerenciar a entrada de pessoa nas salas quando colocadas a um evento (assim como
 nas salas de café também).
 
